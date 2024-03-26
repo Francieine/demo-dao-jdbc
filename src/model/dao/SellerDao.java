@@ -2,6 +2,7 @@ package model.dao;
 
 import java.util.List;
 
+import model.entities.Department;
 import model.entities.Seller;
 
 //Dao é data acess object, classes que acessam outras classes para manipular seus dados
@@ -15,6 +16,7 @@ public interface SellerDao {
 	void deleteBtId(Integer obj);
 	Seller findById(Integer id);
 	List<Seller>findAll();	
+	List<Seller> findByDepartment(Department department); //obtem lista departamento
 	
 	
 
